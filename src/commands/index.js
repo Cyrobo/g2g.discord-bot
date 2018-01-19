@@ -7,4 +7,5 @@ module.exports = {
   request_data: require('./userinfo'),
   setgame: require('./setgame'),
   setstatus: require('./setstatus'),
+  dm: require('./dm'),
 };

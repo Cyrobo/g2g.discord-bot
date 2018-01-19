@@ -1,5 +1,5 @@
-exports.run = async (bot, message, args) => {
-  if (message.author.id === '123778278086541313' || message.author.id === '288209033247326208' || message.author.id === '353530628370726913' ) {//Can only be used by CyRob, DarkHermor & Ato
+exports.run = async (bot, message, args, globalAdmins) => {
+  if (globalAdmins.includes(message.author.id)) {
   if (!args[0]) {
     // Display required args
     message.channel.send(`That command requires a Status, which must be one of the following: Online, Idle, Invisible & dnd (do not disturb)`);
